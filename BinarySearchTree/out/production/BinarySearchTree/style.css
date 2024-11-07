@@ -1,0 +1,70 @@
+/* Base Button Style */
+.animated-button {
+    -fx-background-color: linear-gradient(#ff7f50, #ff4500); /* Gradient background */
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2); /* Shadow effect */
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+    -fx-background-color: linear-gradient(#ff6347, #ff0000); /* Darker gradient on hover */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Display Button Style (Styled like "Enter" key) */
+.display-button {
+    -fx-background-color: linear-gradient(#4CAF50, #2E7D32); /* Green gradient */
+    -fx-text-fill: white;
+    -fx-padding: 15 30; /* Larger size for prominence */
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.display-button:hover {
+    -fx-background-color: linear-gradient(#388E3C, #1B5E20);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Animated Notification Popup Style */
+.notification-popup {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-padding: 15 30;
+    -fx-border-color: #ff7f50;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 3);
+    -fx-opacity: 0;
+    -fx-transition: opacity 0.5s ease;
+}
+
+.notification-popup.show {
+    -fx-opacity: 1;
+}
+
+/* Traversal Display Format */
+.traversal-node {
+    -fx-text-fill: #ff4500; /* Node color in traversal display */
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.traversal-arrow {
+    -fx-text-fill: #333333;
+    -fx-font-size: 16px;
+    -fx-padding: 0 5;
+}
